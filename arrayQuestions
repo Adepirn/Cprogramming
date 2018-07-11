@@ -1,0 +1,9 @@
+xfirst - implicit dimension, final index [4], array data [1003, 1023, 1033, 1063, 1073]
+
+second - implicit dimension, final index [6], array data [ 2.7, 2.89, 2.9, 3.1, 3.55, 3.9, 4]
+
+third - explicit dimension, final index [3], array data [0, 0, 0, 0]
+
+foruth - explicit dimension, final index [9], array data [76, 101, 101, 103, 111, 0, 0, 0, 0, 0]
+
+
