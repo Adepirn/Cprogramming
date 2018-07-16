@@ -3,54 +3,28 @@
 
 int main()
 {
-    int loop = 1;
-    double sideA = 0;
-    double sideB = 0;
-    double sideC = 0;
-    double holdA = 0;
-    double holdB = 0;
-    double holdC = 0;
-    int choice = 0;
+    int answer = 0;
+    int a = 2;
+    int b = 6;
+    int y = 4;
+    int p = 9;
+    int q = 3;
+    //////// ARITHMETIC OPERATOR QUIZ BONUS QUESTION ////////
+    //int y = 4;
+    //1 + 2 * (3 + y) + 5;        // Result 20
+    answer = (1 + 2) - 3 + y * 5;
+    printf("%d\n", answer);
+    //////// RELATIONAL OPERATOR QUIZ BONUS QUESTION ////////
+    //int a = 2; b = 6;
+    //a != b != 3 >= a;          // Result 0
+    answer = a != b != 3 >= a;
+    printf("%d\n", answer);
+    //////// ASSIGNMENT OPERATOR QUIZ BONUS QUESTION ////////
+    //p = 9; q = 3;
+    //(p %= p) || (q /= q--);    // Result 0
+    answer = (p %= p) && (q /= q--);
+    printf("%d\n", answer);
+    // What would be a better way of writing these?
 
-    while(loop = 1)
-    {
-        printf("Finding the missing side of a right triangle.\n1) I know the Length of the Hypotenuse\n2) I do not know the length of the Hypotenuse\n>>");
-        scanf("%d", &choice);
-        if(choice == 1)
-        {
-            printf("Please Enter the length of the Hypotenuse follwed by the length of the known side seperated by a space.\n>>");
-            scanf("%lf %lf", &sideA, &sideB);
-            holdA = sideA * sideA;
-            holdB = sideB * sideB;
-            holdC = holdA - holdB;
-            sideC = sqrtl(holdC);
-            printf("The length of the Unknown side is %f\n", sideC);
-            printf("If you would like to run the program again Press 1, if not Press 0\n>>");
-            scanf("%d", &loop);
-            if(loop == 0)
-            {
-                break;
-            }
-            //break;
-
-        }
-        else if(choice == 2)
-        {
-            printf("Please Enter the length of the two known sides seperated by a space.\n>>");
-            scanf("%lf %lf", &sideA, &sideB);
-            holdA = sideA * sideA;
-            holdB = sideB * sideB;
-            holdC = holdA + holdB;
-            sideC = sqrtl(holdC);
-            printf("The length of the Hypotenuse side is %f\n", sideC);
-            printf("If you would like to run the program again Press 1, if not Press 0\n>>");
-            scanf("%d", &loop);
-            if(loop == 0)
-            {
-                break;
-            }
-            //break;
-        }
-    }
     return 0;
 }
