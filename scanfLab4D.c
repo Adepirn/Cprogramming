@@ -13,7 +13,7 @@ int main()
     printf("Yours is %05.2f", 1.2345);
     printf("\n");
     printf("%s", "Hello World!\0");
-    printf("\n");
+    printf("\n");   
     printf("%9.5s", "Hello world!\0");
     printf("\n");
     printf("%016.11s", "Hello world!\0");
